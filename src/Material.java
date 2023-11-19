@@ -4,30 +4,18 @@ public class Material {
     private double minRate;
     private double weight;
 
-//Methods
-    public void addWeight(double weight){this.weight+=weight;}
-    public void removeWeigh(double weight){this.weight-=weight;}
-
-    @Override
-    public String toString() {
-        return "Material{" +
-                "name='" + name + '\'' +
-                ", type='" + type + '\'' +
-                ", minRate=" + minRate +
-                ", weight=" + weight +
-                '}';
-    }
-
-
-
-
-
     Material(String name,String type,double rate,double weight){
         setName(name);
         setType(type);
         setMinRate(rate);
         setWeight(weight);
     }
+
+//Methods
+    public void addWeight(double weight){this.weight+=weight;}
+    public void removeWeigh(double weight){this.weight-=weight;}
+
+
 
     public void setName(String name) {
         this.name = name;
@@ -59,6 +47,11 @@ public class Material {
 
     public double getWeight() {
         return weight;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Name: %s\tType: %s\tRate: %f\tWeight: %f",getName(),getType(),getMinRate(),getWeight());
     }
 
 }

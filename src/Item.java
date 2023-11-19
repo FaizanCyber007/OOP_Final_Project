@@ -4,27 +4,6 @@ public class Item {
     private double weight;
     private double rate;
 
-
-
-
-    @Override
-    public String toString() {
-        return "Item{" +
-                "ID='" + ID + '\'' +
-                ", Type='" + type + '\'' +
-                ", weight=" + weight +
-                ", rate=" + rate +
-                '}';
-    }
-
-
-
-
-
-
-
-
-
     public Item(String ID,String type,double weight,double rate){
         setID(ID);
         setType(type);
@@ -64,6 +43,11 @@ public class Item {
 
     public double getWeight() {
         return weight;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Item ID: %s\tItem Type: %s\tWeight: %f\tRate: %f",getID(),getType(),getWeight(),getRate());
     }
 
 
