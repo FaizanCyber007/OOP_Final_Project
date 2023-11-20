@@ -9,7 +9,7 @@ public class Transcation {
 
    //Methods
    public double processTransaction(Item item){
-      addItem(item);
+      
       double payment = calculateValue(item);
       return payment;
    }
