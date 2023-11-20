@@ -1,4 +1,5 @@
 public class Transcation {
+
     private String transactionID;
     private String type;
    private Date date;
@@ -7,17 +8,14 @@ public class Transcation {
 
 
    //Methods
-   public void processTransaction(){
-
+   public double processTransaction(Item item){
+      addItem(item);
+      double payment = calculateValue(item);
+      return payment;
    }
-   public double calculateValue(){
+   public double calculateValue(Item item){
       double total=0;
-      for(int i=0;i<items.length;i++){
-         if(items[i]!=null)
-            total+=items[i].getWeight()*items[i].getRate();
-
-
-      }
+      total+=item.getWeight()*item.getRate();
       return total;
    }
 
@@ -89,15 +87,6 @@ public class Transcation {
 
    }
 
-
-
-
-
-
-
-
-
-
    public Transcation(String id,String type,Date date){
       setTransactionID(id);
       setType(type);
@@ -135,11 +124,6 @@ public class Transcation {
    public void setTransactionID(String transactionID) {
       this.transactionID = transactionID;
    }
-
-
-
-
-
 
 
 }

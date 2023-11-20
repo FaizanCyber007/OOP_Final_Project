@@ -3,38 +3,14 @@ import java.util.ArrayList;
 public class Person {
     private String ID;
     private String name;
-    private String contatNo;
+    private String contactNo;
     private ArrayList<Transcation> history;
 
-
-
-    @Override
-    public String toString() {
-        return "Person{" +
-                "ID='" + ID + '\'' +
-                ", name='" + name + '\'' +
-                ", contatNo='" + contatNo + '\'' +
-                '}';
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-    public Person(String id, String name,String contatNo){
+    public Person(String id, String name,String contactNo){
         setID(id);
         setName(name);
-        setContatNo(contatNo);
+        setContactNo(contactNo);
     }
-
-
 
     public String getID() {
         return ID;
@@ -44,8 +20,8 @@ public class Person {
         return name;
     }
 
-    public String getContatNo() {
-        return contatNo;
+    public String getContactNo() {
+        return contactNo;
     }
 
     public void setID(String ID) {
@@ -56,9 +32,12 @@ public class Person {
         this.name = name;
     }
 
-    public void setContatNo(String contatNo) {
-        this.contatNo = contatNo;
+    public void setContactNo(String contatNo) {
+        this.contactNo = contatNo;
     }
 
-
+    @Override
+    public String toString() {
+        return String.format("Person ID: %s\tPerson Name: %s\tContact Number: %s",getID(),getName(),getContactNo());
+    }
 }
