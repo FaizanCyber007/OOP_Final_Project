@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.scrapmanagmentsystem.LandingPageController">
+   <top>
+      <HBox fx:id="Container" prefHeight="126.0" prefWidth="900.0" styleClass="pattern" stylesheets="@login.css" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="126.0" prefWidth="56.0" />
+            <VBox fx:id="logo" prefHeight="126.0" prefWidth="189.0" stylesheets="@login.css">
+               <children>
+                  <Label alignment="BOTTOM_CENTER" prefHeight="115.0" prefWidth="188.0" text="♻️ ScrapSwift" textFill="#3a1db9">
+                     <font>
+                        <Font name="DejaVu Serif Bold" size="23.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <VBox alignment="CENTER" prefHeight="434.0" prefWidth="900.0" styleClass="gradient" stylesheets="@login.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="65.0" prefWidth="900.0">
+               <children>
+                  <Label fx:id="landingPageInstructionLabel" text="Welcome! Please select an option below:" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="157.0" prefWidth="900.0" spacing="75.0" stylesheets="@login.css">
+               <children>
+                  <Button fx:id="addTransaction" contentDisplay="TOP" mnemonicParsing="false" onAction="#addNewTransactionOptions" styleClass="purposeSelectionButton" stylesheets="@login.css" text="Add Transaction">
+                     <graphic>
+                        <ImageView fx:id="transactionImage" fitHeight="165.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/transaction.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="searchItems" contentDisplay="TOP" mnemonicParsing="false" onAction="#searchItem" styleClass="purposeSelectionButton" stylesheets="@login.css" text="Search Item">
+                     <graphic>
+                        <ImageView fitHeight="107.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/seo_1055645.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="showBalance" contentDisplay="TOP" mnemonicParsing="false" onAction="#showBalance" styleClass="purposeSelectionButton" stylesheets="@login.css" text="Show Balance">
+                     <graphic>
+                        <ImageView fitHeight="89.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/money.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+         </children></VBox>
+   </bottom>
+</BorderPane>

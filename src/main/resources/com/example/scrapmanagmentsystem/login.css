@@ -1,0 +1,124 @@
+.vBox_background_center{
+    -fx-background-image: url("images/11663852_20944662.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100%;
+    -fx-background-position: bottom;
+}
+.vBox_background_right {
+    -fx-background-image: url("images/17564643_SL_042620_30310_10.jpg");
+    -fx-background-size: cover;
+}
+#Container{
+    -fx-background-color: rgba(71, 71, 241, 0.87);
+}
+#signInSelectionButton, #signUpSelectionButton{
+    -fx-background-color: #e97841;
+    -fx-padding: 17px 35px;
+    -fx-background-radius: 50px;
+    -fx-font-size: 20px;
+    -fx-font-family: "padmaa-Bold.1.1";
+}
+#backButton {
+    -fx-background-color: #514d4d;
+    -fx-text-fill: #e3d2d2;
+    -fx-padding: 14px 28px;
+    -fx-background-radius: 50px;
+    -fx-font-size: 25px;
+    -fx-font-family: "padmaa-Bold.1.1";
+}
+#searchButton {
+    -fx-background-color: #e97841;
+    -fx-text-fill: #e6d3d3;
+    -fx-pref-width: 250px;
+    -fx-pref-height: 60px;
+    -fx-background-radius: 50px;
+    -fx-font-size: 25px;
+    -fx-font-family: "DejaVu Serif Bold";
+}
+#addTransactionButton{
+    -fx-background-color: #e97841;
+    -fx-text-fill: #e6d3d3;
+    -fx-pref-width: 350px;
+    -fx-pref-height: 60px;
+    -fx-background-radius: 50px;
+    -fx-font-size: 25px;
+    -fx-font-family: "DejaVu Serif Bold";
+}
+#iSoldButton, #iBoughtButton{
+    -fx-background-color: #e97841;
+    -fx-text-fill: #e6d3d3;
+    -fx-pref-width: 600px;
+    -fx-pref-height: 70px;
+    -fx-background-radius: 50px;
+    -fx-font-size: 35px;
+    -fx-font-family: "DejaVu Serif Bold";
+}
+#addTransactionButton:hover {
+    -fx-text-fill: #e97841;
+    -fx-background-color: #e6d3d3;
+}
+#searchButton:hover {
+    -fx-text-fill: #e97841;
+    -fx-background-color: #e6d3d3;
+}
+#backButton:hover{
+    -fx-text-fill: #514d4d;
+    -fx-background-color: #e3d2d2;
+}
+.button:hover {
+    -fx-background-color: #c76736;
+}
+#signInSelectionButton:hover {
+    -fx-background-color: #c76736;
+}#signUpSelectionButton:hover {
+     -fx-background-color: #c76736;
+ }#signinButton:hover {
+      -fx-background-color: #c76736;
+  }
+#logo{
+    -fx-background-image: url(images/663-removebg-preview.png);
+    -fx-background-size: 120px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: top;
+    -fx-padding: 5px 0px;
+}
+.pattern{
+    -fx-background-image: url(images/pattern.png);
+}
+.gradient{
+    -fx-background-color: linear-gradient(to top right, rgba(71, 71, 241, 0.87), #a1d3d3);
+}
+.purposeSelectionButton {
+    -fx-background-color: #e97841;
+    -fx-pref-height: 130px;
+    -fx-pref-width: 200px;
+    -fx-font-size: 17px;
+    -fx-text-alignment: center;
+    -fx-font-family: "DejaVu Serif Bold";
+    -fx-background-radius: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.6), 30, 0, 10, 10);
+
+}
+.purposeSelectionButton:hover{
+    -fx-effect: innershadow(gaussian, black, 15, 0, 5, 5);
+}
+#searchItemInstructionLabel, #landingPageInstructionLabel, #addTransactionInstructionLabel, #addTransactionOptionsInstruction {
+    -fx-font-size: 30px;
+    -fx-font-family: "DejaVu Serif Bold";
+    -fx-text-fill: #9c3f13;
+}
+#productNameTextField,#productIDTextField{
+    -fx-pref-height: 55px;
+    -fx-pref-width: 600px;
+    -fx-background-radius: 20px;
+}
+.wavyImage{
+    -fx-background-image: url(images/Wave.png);
+    -fx-background-size: contain;
+}
+#transactionPersonNameField, #transactionContactField, #transactionDatePicker, #transactionItemNameField1, #transactionItemRateField,#transactionItemWeightField{
+    -fx-pref-height: 40px;
+    -fx-pref-width: 300px;
+    -fx-background-radius: 10px;
+}
+
